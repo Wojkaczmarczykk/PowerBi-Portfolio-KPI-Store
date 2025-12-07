@@ -72,7 +72,7 @@ Zawiera pełen zestaw wskaźników efektywności, umożliwiając granularną ana
 
 
 ### Plik raportu
-(kpi_Store_portfolio.pbix)# PowerBi-portfolio-KPI-Store
+!(kpi_Store_portfolio.pbix)# PowerBi-portfolio-KPI-Store
 
 ------------------------------------------
 
@@ -148,6 +148,6 @@ It contains a full set of performance indicators, enabling granular analysis of 
 
 
 ### Report File
-(kpi_Store_portfolio.pbix)
+!(KPI_Store_portfolio.pbix)
 
 # PowerBi-portfolio-KPI-Store
