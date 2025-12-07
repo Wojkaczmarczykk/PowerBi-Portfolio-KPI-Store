@@ -72,4 +72,82 @@ Zawiera pełen zestaw wskaźników efektywności, umożliwiając granularną ana
 
 
 ### Plik raportu
-[`kpi_store.pbix`](reports/kpi_store.pbix)# PowerBi-portfolio
+(kpi_Store_portfolio.pbix)# PowerBi-portfolio-KPI-Store
+
+------------------------------------------
+
+## KPI Store Dashboard
+
+The report presents key sales performance indicators such as: sales and PT compared to target and last year, traffic, conversion rate, units per transaction (UPT), and average basket value (AVB).  
+It was built in Power BI using DAX and dynamic parameters.
+
+### Report Overview
+#### 1. KPI Store Main Page
+
+The "Main Page" tab is the primary view of the report, presenting key sales performance indicators in weekly or monthly breakdowns (controlled by the **Calendar Level** parameter), as well as geographic and operational perspectives.  
+It was designed to provide a quick assessment of results against targets and comparisons with the same period last year.
+
+##### Main elements:
+- **KPI Boxes** with values:
+  - Sales (Sls R), Target (TG Sls R), % achievement
+  - Differences vs target and last year (LY)
+- **YOY indicators** in the form of gauges and KPI boxes:
+  - Intuitive assessment of dynamics for each KPI
+- **Bar chart**:
+  - Target achievement in weekly/monthly breakdown
+- **Map**:
+  - Target achievement by country
+  - Detailed information available in tooltips
+- **MPK table**:
+  - Detailed results of operational units (MPK) with % achievement
+- **Filter panel**:
+  - Dynamic view control: Calendar Level, business period, country, city, stream
+
+![KPI Store Main Page](images/KPI_Store_Main_Page.PNG)
+
+
+#### 2. KPI Store Distribution
+
+The "Distribution" tab shows the distribution of key performance indicators across locations using the **Location Level** parameter (Store, City, Signboard, Stream).  
+It allows identification of units with the highest and lowest dynamics compared to last year and targets.
+
+##### Main elements:
+- **KPI distribution vs LY**:
+  - Number of location levels performing better than last year for measures such as Sales, Traffic, Units Sold (Sls U), Conversion Rate (CR%)
+  - Color coding: red (decline), green (growth)
+- **Scatter plot**:
+  - X-axis: `Measure X`
+  - Y-axis: `Measure Y`
+  - Measures available: Sls R vs TG, PT vs TG, Traffic vs LY, AVB vs LY, UPT vs LY
+  - Points selected for Location Level (e.g., PL52 Woj)
+  - Conditional coloring: green if both measures are positive, otherwise red
+- **Filter panel**:
+  - Location level, business period, country, city, stream
+
+![KPI Store Distribution](images/KPI_Store_Distribution.PNG)
+
+
+#### 3. KPI Store – Details
+
+The "Details" tab presents detailed operational data for each location unit (MPK).  
+It contains a full set of performance indicators, enabling granular analysis of sales and conversion results.
+
+##### Main elements:
+- **Location Level table** with KPIs:
+  - Sales (Sls R), % target achievement, differences vs LY
+  - PT and its achievement vs target
+  - Traffic, Sls U, UPT, AVB, CR — all in YOY breakdown
+- **Value color coding**:
+  - Charts and icons designed to highlight positive and negative trends
+- **Summary row**:
+  - Aggregate values for all MPKs — overall assessment
+- **Filter panel**:
+  - Dynamic view control: business period, location level, country, city, stream
+
+![KPI Store Details](images/KPI_Store_Details.PNG)
+
+
+### Report File
+(kpi_Store_portfolio.pbix)
+
+# PowerBi-portfolio-KPI-Store
